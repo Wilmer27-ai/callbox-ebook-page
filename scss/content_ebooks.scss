@@ -1,0 +1,162 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+
+.ebook-section {
+  background-image: url("/wp-content/themes/callbox/assets/images/ojt-wilmer-assets/bg-left.svg"),
+    url("/wp-content/themes/callbox/assets/images/ojt-wilmer-assets/bg-right.svg");
+  background-position: left bottom, right bottom;
+  background-size: 50vw, 50vw;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+
+  .ebook-wrapper {
+    max-width: $desktop-md;
+    width: 100%;
+    margin: 0 auto;
+
+    .ebook-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+      padding: 20px;
+      margin-bottom: 40px;
+      justify-items: center;
+
+      @include screensize($tablet) {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        padding: 20px;
+        margin-bottom: 40px;
+        justify-items: center;
+      }
+
+      @include screensize($desktop) {
+        grid-template-columns: 2fr 1fr;
+        gap: 70px;
+        row-gap: 70px;
+      }
+
+      .ebook-content {
+        display: flex;
+        flex-direction: column;
+        background: var(--white);
+        box-shadow: var(--b-shadow);
+        border-radius: 8px;
+        position: relative;
+        margin-top: 50px;
+        z-index: 1;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: var(--b2-shadow);
+        }
+
+        @include screensize($tablet) {
+          height: 300px;
+          width: 565px;
+        }
+
+
+        .ebook-card {
+          @include screensize($tablet) {
+            display: block;
+            position: absolute;
+            top: -48px;
+            left: 18px;
+            width: 225px;
+            height: 330px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 1rem;
+          }
+          @include screensize($desktop) {
+            position: absolute;
+            top: -48px;
+            left: 18px;
+            width: 225px;
+            height: 330px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 1rem;
+          }
+        }
+
+        .ebook-image {
+          height: 320px;
+          width: 280px;
+          display: none;
+          @include screensize($tablet) {
+            display: block;
+          }
+
+          @include screensize($desktop) {
+            display: block;
+          }
+        }
+
+        .card-content {
+          padding: 30px;
+
+          @include screensize($tablet) {
+            padding-top: 30px;
+            padding-left: 265px;
+            padding-right: 23px;
+          }
+
+          @include screensize($desktop) {
+            padding-top: 30px;
+            padding-left: 265px;
+            padding-right: 23px;
+          }
+
+          .card-title {
+            font-size: 25px;
+            line-height: 1.85rem;
+            font-family: $font;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--t-color);
+            margin: 0;
+            transition: color 0.3s ease-in;
+          }
+
+          .card-divider {
+            width: 280px;
+            height: 2px;
+            background-color: var(--yellow);
+            margin: 15px 0;
+            border-radius: 0.5rem;
+          }
+
+          .card-text {
+            display: -webkit-box;
+            font-family: $font;
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            color: var(--p-color);
+            margin-top: 10px;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  html,
+  body,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+$tablet: 712px;
+$desktop: 1024px;
+$desktop-md: 1200px;
+$desktop-lg: 1440px;
+
+@mixin screensize ($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}

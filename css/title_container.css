@@ -1,0 +1,55 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.ebook-title-container {
+  background-color: var(--white);
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ebook-title-container h1 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+  max-width: 780px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+  color: var(--blue);
+}
+.ebook-title-container p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  margin: 20px;
+  margin-top: 0;
+  color: var(--p-color-light);
+}

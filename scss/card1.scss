@@ -1,0 +1,102 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+
+.ebook-cards-1 {
+  margin-top: 500px;
+  .card-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    .card-inner {
+      .card-content {
+        display: flex;
+        margin-bottom: 50px;
+        gap: 20px;
+        .card1 {
+          border-radius: 1rem;
+          box-shadow: 0 2px 5px rgba(102, 102, 102, 0.5);
+          display: grid;
+          grid-template-columns: 0.8fr auto;
+          gap: 10px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(102, 102, 102, 0.7);
+          }
+
+          .card-image {
+            width: 100%;
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+            border-top-left-radius: inherit;
+            border-bottom-left-radius: inherit;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+          }
+          .card-info {
+            max-width: 300px;
+            margin: 15px;
+
+            .card-title {
+              color: var(--blue);
+              font-family: $font;
+              line-height: 1.5rem;
+              margin: 0;
+              margin-top: 10px;
+              font-size: 25px;
+            }
+            .card-description {
+              color: var(--p-color-light);
+              font-family: $font;
+              font-size: 0.95rem;
+              font-weight: 400;
+              line-height: 1.5rem;
+              color: var(--p-color);
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              line-clamp: 3;
+              margin: 0;
+              margin-top: 10px;
+            }
+            .card-industry {
+              display: flex;
+              align-items: center;
+              color: var(--p-color-light);
+              font-family: $font;
+              font-size: 0.9rem;
+              margin: 0;
+              margin-top: 10px;
+
+              .material-icons-outlined {
+                font-size: 25px;
+                vertical-align: middle;
+                margin-right: 5px;
+              }
+            }
+            .card-location {
+              display: flex;
+              align-items: center;
+              color: var(--p-color-light);
+              font-family: $font;
+              font-size: 0.9rem;
+              margin: 0;
+              margin-top: 10px;
+
+              .material-icons-outlined {
+                font-size: 25px;
+                vertical-align: middle;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

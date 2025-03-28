@@ -1,0 +1,215 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section-top {
+  height: auto;
+  width: auto;
+  background-color: var(--blue);
+  position: relative;
+}
+.hero-section-top .hero-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hero-section-top .hero-wrapper .hero-inner {
+  display: grid;
+  padding: 55px 30px;
+  justify-content: center;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (min-width: 712px) {
+  .hero-section-top .hero-wrapper .hero-inner .hero-content {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-section-top .hero-wrapper .hero-inner .hero-content {
+    grid-template-columns: 1fr 0.7fr;
+  }
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text {
+  display: block;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text h1 {
+  font-size: 2.25rem;
+  line-height: 1.375;
+  font-family: "Work Sans", work-sans, sans-serif;
+  font-weight: 600;
+  color: var(--yellow);
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: var(--white);
+  margin: 0;
+  padding-right: 40px;
+}
+@media screen and (min-width: 712px) {
+  .hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text {
+    text-align: left;
+  }
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .banner-text-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--grey);
+  padding-top: 120px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .btn {
+  display: inline-block;
+  width: auto;
+  margin: 30px 0;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Work Sans", work-sans, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .btn:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-0.3125rem);
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form {
+  width: 465px;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .hero-section-top .hero-wrapper .hero-inner .hero-content .download-form {
+    display: block;
+  }
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-wrapper {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-wrapper .form-image {
+  height: 125px;
+  width: 125px;
+  margin-left: 12px;
+  padding-top: 50px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-wrapper .form-title h3 {
+  font-family: "Montserrat", "Inter", sans-serif;
+  font-weight: 900;
+  line-height: 2.5rem;
+  font-size: 36px;
+  background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 12px 0 10px 15px;
+  margin: 0;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-wrapper .form-title p {
+  line-height: 1.5rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--p-color);
+  padding-left: 15px;
+  margin: 0;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-input {
+  text-align: left;
+  padding: 25px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-input label {
+  font-family: "Montserrat", "Inter", sans-serif;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p-color);
+  margin-bottom: 5px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-input span {
+  color: var(--red);
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-input input {
+  width: 100%;
+  padding: 10px;
+  border: var(--border);
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-input input:focus {
+  border-color: var(--yellow);
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-submit {
+  text-align: center;
+  margin-top: 24px;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-submit button {
+  color: var(--white);
+  background: var(--blue);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-submit button:hover:not(:disabled) {
+  background: var(--yellow);
+}
+.hero-section-top .hero-wrapper .hero-inner .hero-content .download-form .form-submit button:disabled {
+  background: var(--disable);
+  cursor: not-allowed;
+}
