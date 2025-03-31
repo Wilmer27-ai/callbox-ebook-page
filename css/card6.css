@@ -24,53 +24,50 @@
   padding: 0;
 }
 
-.card-v4 {
+.card-v6 {
   margin-bottom: 50px;
 }
-.card-v4 .card-v4-wrapper {
-  max-width: 1500px;
+.card-v6 .card-v6-wrapper {
+  max-width: 1400px;
   margin: 0 auto;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner {
+.card-v6 .card-v6-wrapper .card-v6-inner {
   display: flex;
   gap: 50px;
-  justify-content: center;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content {
   display: flex;
+  flex-direction: column;
   background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content:hover {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content:hover {
   transform: translateY(-10px);
   box-shadow: 0 4px 10px rgba(102, 102, 102, 0.7);
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-side-color {
-  width: 12px;
-}
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info {
   max-width: 380px;
   padding: 20px;
   background-color: #ffffff;
   flex: 1;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info h1.card-v4-title {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info h1.card-v6-title {
   color: var(--blue);
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: "Montserrat", "Inter", sans-serif;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-description {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-description {
   color: var(--p-color);
   font-size: 1rem;
   margin-bottom: 10px;
   font-family: "Montserrat", "Inter", sans-serif;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry,
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-industry,
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-location {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -78,15 +75,15 @@
   font-size: 0.9rem;
   font-family: "Montserrat", "Inter", sans-serif;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .material-icons-outlined,
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .material-icons-outlined {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-industry .material-icons-outlined,
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-location .material-icons-outlined {
   font-size: 20px;
   vertical-align: middle;
 }
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .industry-item,
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .location-item,
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .industry-item,
-.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .location-item {
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-industry .industry-item,
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-industry .location-item,
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-location .industry-item,
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-info p.card-v6-location .location-item {
   background-color: #ffca09;
   color: var(--dark-gray);
   padding: 5px 10px;
@@ -94,4 +91,8 @@
   font-size: 0.85rem;
   white-space: nowrap;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.card-v6 .card-v6-wrapper .card-v6-inner .card-v6-content .card-v6-side-color {
+  height: 19px;
+  background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
 }

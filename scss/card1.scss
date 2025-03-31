@@ -3,11 +3,14 @@
 @use "../template-structures/layout" as *;
 
 .ebook-cards-1 {
-  margin-top: 500px;
+  margin-top: 50px;
   .card-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     .card-inner {
+      display: grid; // Use grid layout
+      grid-template-columns: repeat(3, 1fr); // 3 columns
+      gap: 40px; // Space between cards
       .card-content {
         display: flex;
         margin-bottom: 50px;

@@ -3,13 +3,17 @@
 @use "../template-structures/layout" as *;
 
 .card-v5 {
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 
     .card-v5-wrapper {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
 
         .card-v5-inner {
+            display: flex; // Ensure cards are displayed in a row
+            flex-wrap: wrap; // Allow cards to wrap to the next row if needed
+            gap: 40px; // Add gaps between cards
+
             .card-v5-content {
                 display: inline-block;
                 border-radius: 8px;
@@ -74,7 +78,6 @@
                         color: var(--p-color-light);
                         font-size: 0.9rem;
                         font-family: $font;
-                        transition: color 0.3s ease-in-out;
 
                         .material-icons-outlined {
                             font-size: 20px;
@@ -83,22 +86,21 @@
 
                         .industry-item,
                         .location-item {
-                            background-color: #ffca09;
-                            color: var(--dark-gray);
+                            background-color: #ffca09; // Yellow background
+                            color: var(--gray); // Grey text
                             padding: 5px 10px;
                             border-radius: 20px;
                             font-size: 0.85rem;
                             white-space: nowrap;
                             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
                         }
                     }
 
                     &:hover h1.card-v5-title,
                     &:hover p.card-v5-description,
-                    &:hover p.card-v5-industry,
-                    &:hover p.card-v5-location {
+                    &:hover span.material-icons-outlined {
                         color: white; // Change text color to white on hover
+                        transition: color 0.3s ease-in-out; // Add smooth transition
                     }
                 }
             }

@@ -25,11 +25,16 @@
 }
 
 .ebook-cards-1 {
-  margin-top: 500px;
+  margin-top: 50px;
 }
 .ebook-cards-1 .card-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+.ebook-cards-1 .card-wrapper .card-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 .ebook-cards-1 .card-wrapper .card-inner .card-content {
   display: flex;

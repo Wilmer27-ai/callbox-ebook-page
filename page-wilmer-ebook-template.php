@@ -148,141 +148,347 @@
         </div>
     </section>
 
+    <div class="ebook-title-container">
+        <h1>A Different Design Approach for the Card</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum facilis vel sed laboriosam,<br> rerum
+            blanditiis quia distinctio ad ex molestias? Adipisci repellendus</p>
+    </div>
+
     <section class="ebook-cards-1">
         <div class="card-wrapper">
             <div class="card-inner">
-                <div class="card-content">
-                    <div class="card1">
-                        <div class="card-image">
-                            <img src="assets/card1.svg" alt="card-image">
-                        </div>
-                        <div class="card-info">
-                            <h1 class="card-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
-                            <p class="card-description">Callbox's tailored ABM strategy enabled a global leader in
-                                enterprise cloud solutions to enhance their sales</p>
-                            <p class="card-industry">
-                                <span class="material-icons-outlined">business</span>
-                                Software, Logistics
-                            </p>
-                            <p class="card-location">
-                                <span class="material-icons-outlined">place</span>
-                                California, US
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="card-v2">
-        <div class="card-v2-wrapper">
-            <div class="card-v2-inner">
-                <div class="card-v2-content">
-                    <div class="card-v2">
-                        <div class="card-v2-image">
-                            <img src="assets/landscapeimage.svg" alt="card-image">
-                        </div>
-                        <div class="card-v2-info">
-                            <h1 class="card-v2-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
-                            <p class="card-v2-description">Callbox's tailored ABM strategy enabled a global leader in
-                                enterprise cloud solutions to enhance their sales</p>
-                            <p class="card-v2-industry">
-                                <span class="material-icons-outlined">business</span>
-                                <span class="industry-item">Software</span>
-                                <span class="industry-item">Logistics</span>
-                            </p>
-                            <p class="card-v2-location">
-                                <span class="material-icons-outlined">place</span>
-                                <span class="location-item">California</span>
-                                <span class="location-item">US</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="card-v3">
-        <div class="card-v3-wrapper">
-            <div class="card-v3-inner">
-                <div class="card-v3-content">
-                    <div class="card-v3-container">
-                        <div class="card-v3-image">
-                            <img src="assets/card3.svg" alt="card-image">
-                        <div class="floating-card">
-                            <div class="card-v3-info">
-                                <h1 class="card-v3-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
-                                <p class="card-v3-description">Callbox's tailored ABM strategy enabled a global leader in
-                                    enterprise cloud solutions to enhance their sales</p>
-                                <p class="card-v3-industry">
+                <?php
+                $cards = [
+                    [
+                        'image' => 'assets/card1.svg',
+                        'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                        'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales',
+                        'industry' => 'Software, Logistics',
+                        'location' => 'California, US'
+                    ],
+                    [
+                        'image' => 'assets/card1.svg',
+                        'title' => 'Boosting ROI for a Leading SaaS Provider',
+                        'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                        'industry' => 'SaaS, Technology',
+                        'location' => 'New York, US'
+                    ],
+                    [
+                        'image' => 'assets/card1.svg',
+                        'title' => 'Driving Growth for a Global Logistics Company',
+                        'description' => 'Learn how Callbox supported a logistics company in expanding their market reach and driving growth.',
+                        'industry' => 'Logistics, Transportation',
+                        'location' => 'London, UK'
+                    ]
+                ];
+
+                foreach ($cards as $card) {
+                    ?>
+                    <div class="card-content">
+                        <div class="card1">
+                            <div class="card-image">
+                                <img src="<?php echo $card['image']; ?>" alt="card-image">
+                            </div>
+                            <div class="card-info">
+                                <h1 class="card-title"><?php echo $card['title']; ?></h1>
+                                <p class="card-description"><?php echo $card['description']; ?></p>
+                                <p class="card-industry">
                                     <span class="material-icons-outlined">business</span>
-                                    <span class="industry-item">Software</span>
-                                    <span class="industry-item">Logistics</span>
+                                    <?php echo $card['industry']; ?>
                                 </p>
-                                <p class="card-v3-location">
+                                <p class="card-location">
                                     <span class="material-icons-outlined">place</span>
-                                    <span class="location-item">California</span>
-                                    <span class="location-item">US</span>
+                                    <?php echo $card['location']; ?>
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <?php
+                }
+                ?>
             </div>
         </div>
     </section>
-    <section class="card-v4">
-    <div class="card-v4-wrapper">
-        <div class="card-v4-inner">
-            <div class="card-v4-content">
-                <div class="card-v4-side-color"></div>
-                <div class="card-v4-info">
-                    <h1 class="card-v4-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
-                    <p class="card-v4-description">Callbox's tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.</p>
-                    <p class="card-v4-industry">
-                        <span class="material-icons-outlined">business</span>
-                        <span class="industry-item">Software</span>
-                        <span class="industry-item">Logistics</span>
-                    </p>
-                    <p class="card-v4-location">
-                        <span class="material-icons-outlined">place</span>
-                        <span class="location-item">California</span>
-                        <span class="location-item">US</span>
-                    </p>
+
+    <section class="card-v2">
+        <div class="card-v2-wrapper">
+            <div class="card-v2-inner">
+                <?php
+                $cards_v2 = [
+                    [
+                        'image' => 'assets/landscapeimage.svg',
+                        'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                        'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.',
+                        'industry' => ['Software', 'Logistics'],
+                        'location' => ['California', 'US']
+                    ],
+                    [
+                        'image' => 'assets/landscapeimage.svg',
+                        'title' => 'Boosting ROI for a Leading SaaS Provider',
+                        'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                        'industry' => ['SaaS', 'Technology'],
+                        'location' => ['New York', 'US']
+                    ],
+                    [
+                        'image' => 'assets/landscapeimage.svg',
+                        'title' => 'Driving Growth for a Global Logistics Company',
+                        'description' => 'Learn how Callbox supported a logistics company in expanding their market reach and driving growth.',
+                        'industry' => ['Logistics', 'Transportation'],
+                        'location' => ['London', 'UK']
+                    ]
+                ];
+
+                foreach ($cards_v2 as $card) {
+                    ?>
+                    <div class="card-v2-content">
+                        <div class="card-v2">
+                            <div class="card-v2-image">
+                                <img src="<?php echo $card['image']; ?>" alt="card-image">
+                            </div>
+                            <div class="card-v2-info">
+                                <h1 class="card-v2-title"><?php echo $card['title']; ?></h1>
+                                <p class="card-v2-description"><?php echo $card['description']; ?></p>
+                                <p class="card-v2-industry">
+                                    <span class="material-icons-outlined">business</span>
+                                    <?php foreach ($card['industry'] as $industry) { ?>
+                                        <span class="industry-item"><?php echo $industry; ?></span>
+                                    <?php } ?>
+                                </p>
+                                <p class="card-v2-location">
+                                    <span class="material-icons-outlined">place</span>
+                                    <?php foreach ($card['location'] as $location) { ?>
+                                        <span class="location-item"><?php echo $location; ?></span>
+                                    <?php } ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-v3">
+        <div class="card-v3-wrapper">
+            <div class="card-v3-inner">
+                <?php
+                $cards_v3 = [
+                    [
+                        'image' => 'assets/card3.svg',
+                        'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                        'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.',
+                        'industry' => ['Software', 'Logistics'],
+                        'location' => ['California', 'US']
+                    ],
+                    [
+                        'image' => 'assets/card3.svg',
+                        'title' => 'Boosting ROI for a Leading SaaS Provider',
+                        'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                        'industry' => ['SaaS', 'Technology'],
+                        'location' => ['New York', 'US']
+                    ],
+                    [
+                        'image' => 'assets/card3.svg',
+                        'title' => 'Driving Growth for a Global Logistics Company',
+                        'description' => 'Learn how Callbox supported a logistics company in expanding their market reach and driving growth.',
+                        'industry' => ['Logistics', 'Transportation'],
+                        'location' => ['London', 'UK']
+                    ]
+                ];
+
+                foreach ($cards_v3 as $card) {
+                    ?>
+                    <div class="card-v3-content">
+                        <div class="card-v3-container">
+                            <div class="card-v3-image">
+                                <img src="<?php echo $card['image']; ?>" alt="card-image">
+                            </div>
+                            <div class="floating-card">
+                                <div class="card-v3-info">
+                                    <h1 class="card-v3-title"><?php echo $card['title']; ?></h1>
+                                    <p class="card-v3-description"><?php echo $card['description']; ?></p>
+                                    <p class="card-v3-industry">
+                                        <span class="material-icons-outlined">business</span>
+                                        <?php foreach ($card['industry'] as $industry) { ?>
+                                            <span class="industry-item"><?php echo $industry; ?></span>
+                                        <?php } ?>
+                                    </p>
+                                    <p class="card-v3-location">
+                                        <span class="material-icons-outlined">place</span>
+                                        <?php foreach ($card['location'] as $location) { ?>
+                                            <span class="location-item"><?php echo $location; ?></span>
+                                        <?php } ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+    </section>
+
+        <section class="card-v4">
+            <div class="card-v4-wrapper">
+                <div class="card-v4-inner">
+                    <?php
+                    $cards_v4 = [
+                        [
+                            'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                            'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.',
+                            'industry' => ['Software', 'Logistics'],
+                            'location' => ['California', 'US']
+                        ],
+                        [
+                            'title' => 'Boosting ROI for a Leading SaaS Provider',
+                            'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                            'industry' => ['SaaS', 'Technology'],
+                            'location' => ['New York', 'US']
+                        ],
+                        [
+                            'title' => 'Driving Growth for a Global Logistics Company',
+                            'description' => 'Learn how Callbox supported a logistics company in expanding their market reach and driving growth.',
+                            'industry' => ['Logistics', 'Transportation'],
+                            'location' => ['London', 'UK']
+                        ]
+                    ];
+
+                    foreach ($cards_v4 as $card) {
+                        ?>
+                        <div class="card-v4-content">
+                            <div class="card-v4-side-color"></div>
+                            <div class="card-v4-info">
+                                <h1 class="card-v4-title"><?php echo $card['title']; ?></h1>
+                                <p class="card-v4-description"><?php echo $card['description']; ?></p>
+                                <p class="card-v4-industry">
+                                    <span class="material-icons-outlined">business</span>
+                                    <?php foreach ($card['industry'] as $industry) { ?>
+                                        <span class="industry-item"><?php echo $industry; ?></span>
+                                    <?php } ?>
+                                </p>
+                                <p class="card-v4-location">
+                                    <span class="material-icons-outlined">place</span>
+                                    <?php foreach ($card['location'] as $location) { ?>
+                                        <span class="location-item"><?php echo $location; ?></span>
+                                    <?php } ?>
+                                </p>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
+        </section>
+
+        <section class="card-v5">
+    <div class="card-v5-wrapper">
+        <div class="card-v5-inner">
+            <?php
+            $cards_v5 = [
+                [
+                    'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                    'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.',
+                    'industry' => ['Software', 'Logistics'],
+                    'location' => ['California', 'US']
+                ],
+                [
+                    'title' => 'Boosting ROI for a Leading SaaS Provider',
+                    'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                    'industry' => ['SaaS', 'Technology'],
+                    'location' => ['New York', 'US']
+                ],
+                [
+                    'title' => 'Driving Growth for a Global Logistics Company',
+                    'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                    'industry' => ['Logistics', 'Transportation'],
+                    'location' => ['London', 'UK']
+                ]
+            ];
+
+            foreach ($cards_v5 as $card) {
+                ?>
+                <div class="card-v5-content">
+                    <div class="card-v5-info">
+                        <h1 class="card-v5-title"><?php echo $card['title']; ?></h1>
+                        <p class="card-v5-description"><?php echo $card['description']; ?></p>
+                        <p class="card-v5-industry">
+                            <span class="material-icons-outlined">business</span>
+                            <?php foreach ($card['industry'] as $industry) { ?>
+                                <span class="industry-item"><?php echo $industry; ?></span>
+                            <?php } ?>
+                        </p>
+                        <p class="card-v5-location">
+                            <span class="material-icons-outlined">place</span>
+                            <?php foreach ($card['location'] as $location) { ?>
+                                <span class="location-item"><?php echo $location; ?></span>
+                            <?php } ?>
+                        </p>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </section>
-    <section class="card-v5">
-        <div class="card-v5-wrapper">
-            <div class="card-v5-inner">
-                <div class="card-v5-content">
-                <div class="card-v5-info">
-                    <h1 class="card-v5-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
-                    <p class="card-v5-description">Callbox's tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.</p>
-                    <p class="card-v5-industry">
-                        <span class="material-icons-outlined">business</span>
-                        <span class="industry-item">Software</span>
-                        <span class="industry-item">Logistics</span>
-                    </p>
-                    <p class="card-v5-location">
-                        <span class="material-icons-outlined">place</span>
-                        <span class="location-item">California</span>
-                        <span class="location-item">US</span>
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="card-v6">
-        <div class="card-v6-wrapper">
-            <div class="card-v6-inner">
+
+<section class="card-v6">
+    <div class="card-v6-wrapper">
+        <div class="card-v6-inner">
+            <?php
+            $cards_v6 = [
+                [
+                    'title' => 'Callbox Amplifies Sales Pipeline for Global Cloud Giant',
+                    'description' => 'Callbox\'s tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.',
+                    'industry' => ['Software', 'Logistics'],
+                    'location' => ['California', 'US']
+                ],
+                [
+                    'title' => 'Boosting ROI for a Leading SaaS Provider',
+                    'description' => 'Discover how Callbox helped a SaaS provider achieve a 200% increase in ROI through targeted campaigns.',
+                    'industry' => ['SaaS', 'Technology'],
+                    'location' => ['New York', 'US']
+                ],
+                [
+                    'title' => 'Driving Growth for a Global Logistics Company',
+                    'description' => 'Learn how Callbox supported a logistics company in expanding their market reach and driving growth.',
+                    'industry' => ['Logistics', 'Transportation'],
+                    'location' => ['London', 'UK']
+                ]
+            ];
+
+            foreach ($cards_v6 as $card) {
+                ?>
                 <div class="card-v6-content">
-                   
+                    <div class="card-v6-info">
+                        <h1 class="card-v6-title"><?php echo $card['title']; ?></h1>
+                        <p class="card-v6-description"><?php echo $card['description']; ?></p>
+                        <p class="card-v6-industry">
+                            <span class="material-icons-outlined">business</span>
+                            <?php foreach ($card['industry'] as $industry) { ?>
+                                <span class="industry-item"><?php echo $industry; ?></span>
+                            <?php } ?>
+                        </p>
+                        <p class="card-v6-location">
+                            <span class="material-icons-outlined">place</span>
+                            <?php foreach ($card['location'] as $location) { ?>
+                                <span class="location-item"><?php echo $location; ?></span>
+                            <?php } ?>
+                        </p>
+                    </div>
+                    <div class="card-v6-side-color"></div>
                 </div>
-            </div>
+                <?php
+            }
+            ?>
         </div>
-    </section>
+    </div>
+</section>
 </body>
+
 </html>

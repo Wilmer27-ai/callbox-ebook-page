@@ -32,10 +32,13 @@
   margin: 0 auto;
 }
 .card-v2 .card-v2-wrapper .card-v2-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content {
   display: flex;
+  justify-content: center;
 }
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content .card-v2 {
   width: fit-content;

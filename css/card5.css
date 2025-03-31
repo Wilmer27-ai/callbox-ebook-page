@@ -26,11 +26,16 @@
 }
 
 .card-v5 {
-  margin-bottom: 500px;
+  margin-bottom: 50px;
 }
 .card-v5 .card-v5-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content {
   display: inline-block;
@@ -91,7 +96,6 @@
   color: var(--p-color-light);
   font-size: 0.9rem;
   font-family: "Montserrat", "Inter", sans-serif;
-  transition: color 0.3s ease-in-out;
 }
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-industry .material-icons-outlined,
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .material-icons-outlined {
@@ -103,14 +107,14 @@
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .industry-item,
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .location-item {
   background-color: #ffca09;
-  color: var(--dark-gray);
+  color: var(--gray);
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.85rem;
   white-space: nowrap;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover h1.card-v5-title, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-description, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-industry, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-location {
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover h1.card-v5-title, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-description, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover span.material-icons-outlined {
   color: white;
+  transition: color 0.3s ease-in-out;
 }

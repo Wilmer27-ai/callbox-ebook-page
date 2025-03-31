@@ -10,10 +10,14 @@
       margin: 0 auto;
   
       .card-v2-inner {
-        display: flex; // Ensures the cards align horizontally if there are multiple
+        display: grid; // Use grid layout
+        grid-template-columns: repeat(3, 1fr); // 3 columns
+        gap: 10px; // Space between cards
+        
   
         .card-v2-content {
           display: flex; // Ensures proper layout for the content
+          justify-content: center;
   
           .card-v2 {
             width: fit-content; // Ensures the card only occupies the size of its content
