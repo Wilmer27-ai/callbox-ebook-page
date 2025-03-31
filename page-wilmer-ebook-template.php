@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/card1.css">
     <link rel="stylesheet" href="css/card2.css">
     <link rel="stylesheet" href="css/card3.css">
+    <link rel="stylesheet" href="css/card4.css">
+    <link rel="stylesheet" href="css/card5.css">
+    <link rel="stylesheet" href="css/card6.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
@@ -227,5 +230,28 @@
             </div>
         </div>
     </section>
+    <section class="card-v4">
+    <div class="card-v4-wrapper">
+        <div class="card-v4-inner">
+            <div class="card-v4-content">
+                <div class="card-v4-side-color"></div>
+                <div class="card-v4-info">
+                    <h1 class="card-v4-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
+                    <p class="card-v4-description">Callbox's tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.</p>
+                    <p class="card-v4-industry">
+                        <span class="material-icons-outlined">business</span>
+                        <span class="industry-item">Software</span>
+                        <span class="industry-item">Logistics</span>
+                    </p>
+                    <p class="card-v4-location">
+                        <span class="material-icons-outlined">place</span>
+                        <span class="location-item">California</span>
+                        <span class="location-item">US</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>

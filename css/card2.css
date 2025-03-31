@@ -73,7 +73,7 @@
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content .card-v2 .card-v2-info .card-v2-title {
   color: var(--blue);
   font-family: "Montserrat", "Inter", sans-serif;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin: 0;
   font-size: 25px;
 }

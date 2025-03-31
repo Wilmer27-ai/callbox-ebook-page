@@ -1,0 +1,94 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.card-v4 {
+  margin-bottom: 200px;
+}
+.card-v4 .card-v4-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner {
+  display: flex;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content {
+  display: flex;
+  background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(102, 102, 102, 0.7);
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-side-color {
+  width: 12px;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info {
+  max-width: 420px;
+  padding: 20px;
+  background-color: #ffffff;
+  flex: 1;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info h1.card-v4-title {
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-description {
+  color: var(--p-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry,
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--p-color-light);
+  font-size: 0.9rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .material-icons-outlined,
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .material-icons-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .industry-item,
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-industry .location-item,
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .industry-item,
+.card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-location .location-item {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
