@@ -1,0 +1,38 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.card-v5 {
+  margin-bottom: 200px;
+}
+.card-v5 .card-v5-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

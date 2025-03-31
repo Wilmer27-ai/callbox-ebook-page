@@ -50,7 +50,7 @@
   width: 12px;
 }
 .card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info {
-  max-width: 420px;
+  max-width: 380px;
   padding: 20px;
   background-color: #ffffff;
   flex: 1;
@@ -59,6 +59,7 @@
   color: var(--blue);
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-family: "Montserrat", "Inter", sans-serif;
 }
 .card-v4 .card-v4-wrapper .card-v4-inner .card-v4-content .card-v4-info p.card-v4-description {
   color: var(--p-color);

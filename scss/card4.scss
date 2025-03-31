@@ -30,15 +30,17 @@
         }
 
         .card-v4-info {
-          max-width: 420px;
+          max-width: 380px;
           padding: 20px;
           background-color: #ffffff;
           flex: 1;
 
           h1.card-v4-title {
+
             color: var(--blue);
             font-size: 1.5rem;
             margin-bottom: 10px;
+            font-family: $font;
           }
 
           p.card-v4-description {

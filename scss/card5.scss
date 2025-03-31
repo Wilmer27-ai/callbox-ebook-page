@@ -1,0 +1,18 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+
+.card-v5{
+    margin-bottom: 200px;
+    .card-v5-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        .card-v5-inner{
+            .card-v5-content {
+                background-color: black;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
