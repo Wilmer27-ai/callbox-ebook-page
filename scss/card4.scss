@@ -3,7 +3,7 @@
 @use "../template-structures/layout" as *;
 
 .card-v4 {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 
   .card-v4-wrapper {
     max-width: 1200px;
@@ -36,7 +36,6 @@
           flex: 1;
 
           h1.card-v4-title {
-
             color: var(--blue);
             font-size: 1.5rem;
             margin-bottom: 10px;
@@ -66,7 +65,7 @@
 
             .industry-item,
             .location-item {
-              background-color: var(--light-gray);
+              background-color: #ffca09;
               color: var(--dark-gray);
               padding: 5px 10px;
               border-radius: 20px;

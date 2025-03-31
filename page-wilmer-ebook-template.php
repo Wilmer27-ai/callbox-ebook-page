@@ -257,9 +257,20 @@
         <div class="card-v5-wrapper">
             <div class="card-v5-inner">
                 <div class="card-v5-content">
-
-                    
-                  
+                <div class="card-v5-info">
+                    <h1 class="card-v5-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
+                    <p class="card-v5-description">Callbox's tailored ABM strategy enabled a global leader in enterprise cloud solutions to enhance their sales.</p>
+                    <p class="card-v5-industry">
+                        <span class="material-icons-outlined">business</span>
+                        <span class="industry-item">Software</span>
+                        <span class="industry-item">Logistics</span>
+                    </p>
+                    <p class="card-v5-location">
+                        <span class="material-icons-outlined">place</span>
+                        <span class="location-item">California</span>
+                        <span class="location-item">US</span>
+                    </p>
+                </div>
                 </div>
             </div>
         </div>

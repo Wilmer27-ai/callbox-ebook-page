@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --blue: #063060;
   --grey: rgba(255, 255, 255, 0.3);
@@ -25,14 +26,95 @@
 }
 
 .card-v5 {
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 .card-v5 .card-v5-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content {
-  background-color: black;
+  display: inline-block;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content:after {
+  content: "→";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(to bottom, #2eadff, #3d83ff, #2300c0);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content:hover:before {
+  transform: scale(25);
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info {
+  font-family: "Montserrat", "Inter", sans-serif;
+  max-width: 380px;
+  padding: 20px;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info h1.card-v5-title {
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-description {
+  color: var(--p-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-industry,
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--p-color-light);
+  font-size: 0.9rem;
+  font-family: "Montserrat", "Inter", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-industry .material-icons-outlined,
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .material-icons-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-industry .industry-item,
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-industry .location-item,
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .industry-item,
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info p.card-v5-location .location-item {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover h1.card-v5-title, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-description, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-industry, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-location {
+  color: rgba(255, 255, 255, 0.9);
+}
+.card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-industry .industry-item, .card-v5 .card-v5-wrapper .card-v5-inner .card-v5-content .card-v5-info:hover p.card-v5-location .location-item {
+  background-color: #ffca09;
+  color: black;
 }
