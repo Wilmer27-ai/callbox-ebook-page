@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/content_ebooks.css">
     <link rel="stylesheet" href="css/card1.css">
     <link rel="stylesheet" href="css/card2.css">
+    <link rel="stylesheet" href="css/card3.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
@@ -197,6 +198,34 @@
                 </div>
             </div>
     </section>
-    <section class=""></section>
+    <section class="card-v3">
+        <div class="card-v3-wrapper">
+            <div class="card-v3-inner">
+                <div class="card-v3-content">
+                    <div class="card-v3-container">
+                        <div class="card-v3-image">
+                            <img src="assets/card3.svg" alt="card-image">
+                        <div class="floating-card">
+                            <div class="card-v3-info">
+                                <h1 class="card-v3-title">Callbox Amplifies Sales Pipeline for Global Cloud Giant</h1>
+                                <p class="card-v3-description">Callbox's tailored ABM strategy enabled a global leader in
+                                    enterprise cloud solutions to enhance their sales</p>
+                                <p class="card-v3-industry">
+                                    <span class="material-icons-outlined">business</span>
+                                    <span class="industry-item">Software</span>
+                                    <span class="industry-item">Logistics</span>
+                                </p>
+                                <p class="card-v3-location">
+                                    <span class="material-icons-outlined">place</span>
+                                    <span class="location-item">California</span>
+                                    <span class="location-item">US</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
