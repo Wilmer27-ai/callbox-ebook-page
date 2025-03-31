@@ -115,7 +115,7 @@
 .card-v3 .card-v3-wrapper .card-v3-inner .card-v3-content .card-v3-container .floating-card .card-v3-info .card-v3-industry .location-item,
 .card-v3 .card-v3-wrapper .card-v3-inner .card-v3-content .card-v3-container .floating-card .card-v3-info .card-v3-location .industry-item,
 .card-v3 .card-v3-wrapper .card-v3-inner .card-v3-content .card-v3-container .floating-card .card-v3-info .card-v3-location .location-item {
-  background-color: var(--light-gray);
+  background-color: #ffca09;
   color: var(--dark-gray);
   padding: 5px 10px;
   border-radius: 20px;

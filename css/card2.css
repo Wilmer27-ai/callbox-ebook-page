@@ -111,7 +111,7 @@
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content .card-v2 .card-v2-info .card-v2-industry .location-item,
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content .card-v2 .card-v2-info .card-v2-location .industry-item,
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content .card-v2 .card-v2-info .card-v2-location .location-item {
-  background-color: var(--light-gray);
+  background-color: #ffca09;
   color: var(--dark-gray);
   padding: 5px 10px;
   border-radius: 20px;
