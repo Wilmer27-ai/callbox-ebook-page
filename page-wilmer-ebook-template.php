@@ -275,5 +275,14 @@
             </div>
         </div>
     </section>
+    <section class="card-v6">
+        <div class="card-v6-wrapper">
+            <div class="card-v6-inner">
+                <div class="card-v6-content">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
