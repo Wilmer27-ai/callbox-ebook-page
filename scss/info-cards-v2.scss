@@ -1,0 +1,108 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+
+.team-info-cards-v2 {
+    margin-top: 50px; // Adjusted margin-top for better spacing
+
+
+    .team-info-cards-wrapper-v2 {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .team-info-cards-inner-v2 {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+            place-items: center; 
+
+            @include screensize($tablet) {
+                grid-template-columns: 1fr 1fr 1fr; 
+                gap: 10px; 
+                place-items: unset; 
+            }
+            @include screensize($desktop) {
+                grid-template-columns: 1fr 1fr 1fr; 
+                gap: 10px; 
+                place-items: unset; 
+            }
+
+            .team-info-content-v2 {
+                display: flex;
+                flex-direction: column;
+                background-color: #ffffff;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 20px;
+                max-width: 250px;
+                position: relative; /* Added for positioning the line */
+
+                &:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 4px 10px rgba(102, 102, 102, 0.7);
+                }
+
+                .team-info-cards-line-v2 {
+                    width: 11px;
+                    height: 100%;
+                    background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
+                    position: absolute;
+                    left: 0; /* Align the line to the left */
+                    top: 0;
+                }
+
+                h1.team-info-title-v2 {
+                    color: var(--blue);
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    font-family: $font;
+                    line-height: 1.85rem;
+                    margin: 0;
+                }
+
+                p.team-info-description-v2 {
+                    color: var(--p-color);
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                    font-family: $font;
+                    line-height: 1.5rem;
+                }
+
+                .team-info-industry-v2,
+                .team-info-location-v2 {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    margin-top: 10px;
+
+                    i {
+                        font-size: 1.4rem; // Control icon size
+                        margin-right: 5px;
+                        color: #014e89;
+                        vertical-align: middle;
+                        position: relative; // Allow independent positioning
+                    }
+
+
+
+                    &.team-info-location-v2 i {
+                        margin: 0 8px 0 3px;
+                    }
+
+                    span {
+                        font-size: 1rem; // Control text size
+                        line-height: 1.5rem;
+                    }
+
+                    span {
+                        font-size: 0.9rem;
+                        color: var(--p-color-light);
+                        font-family: $font;
+                    }
+                }
+            }
+        }
+    }
+}   

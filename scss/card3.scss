@@ -11,16 +11,31 @@
 
     .card-v3-inner {
       display: grid; // Use grid layout
-      grid-template-columns: repeat(3, 1fr); // 3 columns
-      gap: 20px; // Space between cards
+      grid-template-columns: 1fr; // 3 columns
+      gap: 250px; // Space between cards
+
+
+      @include screensize($tablet) {
+        grid-template-columns: 1fr; // 2 columns for tablet
+      }
+
+      @include screensize ($desktop) {
+        grid-template-columns: 1fr 1fr 1fr; // 3 columns for desktop
+        gap: 20px; // Space between cards
+      }
 
       .card-v3-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
         .card-v3-container {
           box-shadow: 0 2px 5px rgba(102, 102, 102, 0.5);
           display: inline-block; // Ensures the container wraps around its content
           position: relative;
           padding: 3px;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 
           &:hover {
             transform: translateY(-10px);
@@ -57,7 +72,7 @@
             box-shadow: 0 2px 5px rgba(102, 102, 102, 0.5);
             width: 320px;
             height: auto;
-            bottom: -180px;
+            bottom: -220px;
             left: 10px;
             z-index: 2; // Ensure it sits above the image
             padding: 10px;

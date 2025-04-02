@@ -33,8 +33,18 @@
 }
 .card-v2 .card-v2-wrapper .card-v2-inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 10px;
+}
+@media screen and (min-width: 712px) {
+  .card-v2 .card-v2-wrapper .card-v2-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-v2 .card-v2-wrapper .card-v2-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .card-v2 .card-v2-wrapper .card-v2-inner .card-v2-content {
   display: flex;

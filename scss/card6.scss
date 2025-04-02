@@ -10,43 +10,68 @@
     margin: 0 auto;
 
     .card-v6-inner {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr; // Default to 1 column
       gap: 50px; // Space between cards
-
+      justify-content: center; // Center the cards horizontally
+      align-content: center; // Center the cards vertically if there's extra space
+    
+      @include screensize($tablet) {
+        grid-template-columns: 1fr; // Single column on tablets
+      }
+    
+      @include screensize($desktop) {
+        grid-template-columns: 1fr 1fr 1fr; // Three columns on desktop
+      }
+    
       .card-v6-content {
         display: flex;
         flex-direction: column; // Stack elements vertically
-        background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
+        position: relative; // Required for positioning the gradient at the bottom
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        overflow: hidden; // Ensures the bottom color stays within the card
+        overflow: hidden; // Ensures the gradient stays within the card
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+        align-self: start; // Prevent stretching in the grid cell
+        justify-self: center; // Center the card horizontally within its grid cell
+        max-width: 380px; // Set a maximum width for the card to match its content
+    
         &:hover {
           transform: translateY(-10px);
           box-shadow: 0 4px 10px rgba(102, 102, 102, 0.7);
         }
-
+    
+        // Add a pseudo-element for the gradient at the bottom
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%; // Span the entire width of the card
+          height: 12px; // Adjust the height of the gradient
+          background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
+        }
+    
         .card-v6-info {
-            max-width: 380px;
+          max-width: 380px;
           padding: 20px;
           background-color: #ffffff;
           flex: 1;
-
+    
           h1.card-v6-title {
             color: var(--blue);
             font-size: 1.5rem;
             margin-bottom: 10px;
             font-family: $font;
           }
-
+    
           p.card-v6-description {
             color: var(--p-color);
             font-size: 1rem;
             margin-bottom: 10px;
             font-family: $font;
           }
-
+    
           p.card-v6-industry,
           p.card-v6-location {
             display: flex;
@@ -55,12 +80,12 @@
             color: var(--p-color-light);
             font-size: 0.9rem;
             font-family: $font;
-
+    
             .material-icons-outlined {
               font-size: 20px;
               vertical-align: middle;
             }
-
+    
             .industry-item,
             .location-item {
               background-color: #ffca09;
@@ -73,7 +98,8 @@
             }
           }
         }
-
+      
+    
         .card-v6-side-color {
           height: 19px; // Adjust the height of the bottom color
           background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);

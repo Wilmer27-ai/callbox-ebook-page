@@ -9,12 +9,22 @@
     margin: 0 auto;
     .card-inner {
       display: grid; // Use grid layout
-      grid-template-columns: repeat(3, 1fr); // 3 columns
+      grid-template-columns: 1fr; // 3 columns
       gap: 40px; // Space between cards
+
+      @include screensize($tablet) {
+        grid-template-columns: 1fr; // 2 columns for tablet
+      }
+
+      @include screensize($desktop) {
+        grid-template-columns: 1fr 1fr 1fr; // 3 columns for desktop
+      }
+
       .card-content {
         display: flex;
         margin-bottom: 50px;
         gap: 20px;
+        justify-content: center;
         .card1 {
           border-radius: 1rem;
           box-shadow: 0 2px 5px rgba(102, 102, 102, 0.5);
@@ -30,11 +40,15 @@
 
           .card-image {
             width: 100%;
-            height: 290px;
+            height: 320px;
             position: relative;
             overflow: hidden;
             border-top-left-radius: inherit;
             border-bottom-left-radius: inherit;
+
+            @include screensize($desktop) {
+              height: 290px;
+            }
             img {
               width: 100%;
               height: 100%;
@@ -43,8 +57,16 @@
             }
           }
           .card-info {
-            max-width: 300px;
-            margin: 15px;
+            max-width: 250px;
+            margin: 10px;
+
+            @include screensize($tablet) {
+              margin: 15px;
+            }
+            @include screensize($desktop) {
+              margin: 10px;
+              max-width: 300px;
+            }
 
             .card-title {
               color: var(--blue);

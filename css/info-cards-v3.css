@@ -1,0 +1,164 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.team-info-cards-v3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  place-items: center;
+}
+@media screen and (min-width: 712px) {
+  .team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: unset;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: unset;
+  }
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 {
+  max-width: 260px;
+  height: auto;
+  width: auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Added for positioning the line */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(102, 102, 102, 0.7);
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-cards-line-v3 {
+  width: 11px;
+  height: 100%;
+  background: linear-gradient(190deg, #2eadff, #3d83ff, #2300c0);
+  position: absolute;
+  left: 0; /* Align the line to the left */
+  top: 0;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 {
+  padding: 20px;
+  background-color: #ffffff;
+  flex: 1;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 h1.team-info-title-v3 {
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  line-height: 1.85rem;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .separator {
+  width: 120px;
+  height: 5px; /* Thickness of the line */
+  background-color: #ffca09; /* Line color */
+  margin: 15px 0; /* Spacing around the line */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 p.team-info-description-v3 {
+  color: var(--p-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  line-height: 1.5rem; /* Ensure consistent line height */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-industry-v3,
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 {
+  margin-bottom: 0px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-industry-v3 i,
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 i {
+  font-size: 1.4rem; /* Adjust icon size */
+  margin-right: 5px; /* Add spacing between icon and text */
+  color: #014e89; /* Optional: Set icon color */
+  vertical-align: middle; /* Align icon vertically with text */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-industry-v3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 30px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 10px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 i {
+  font-size: 1.4rem; /* Control icon size */
+  margin-right: 5px;
+  color: #014e89;
+  vertical-align: middle;
+  position: relative; /* Allow independent positioning */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3.team-info-location-v3 i {
+  margin: 0 9px 0 3px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 span {
+  font-size: 1rem; /* Control text size */
+  line-height: 1.5rem;
+  margin-right: 5px;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .team-info-location-v3 span {
+  font-size: 0.9rem;
+  color: white;
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .pill {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  line-height: 1.5; /* Ensure consistent line height */
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .industry-pill {
+  background-color: #014e89;
+  color: white;
+  margin-right: 5px; /* Add spacing between pills */
+}
+.team-info-cards-v3 .team-info-cards-wrapper-v3 .team-info-cards-inner-v3 .team-info-cards-v3 .team-info-content-v3 .location-pill {
+  background-color: #014e89;
+  color: white;
+}

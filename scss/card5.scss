@@ -10,17 +10,29 @@
         margin: 0 auto;
 
         .card-v5-inner {
-            display: flex; // Ensure cards are displayed in a row
-            flex-wrap: wrap; // Allow cards to wrap to the next row if needed
-            gap: 40px; // Add gaps between cards
-
+            display: grid; // Use grid layout
+            grid-template-columns: 1fr; // Responsive columns
+            gap: 20px; // Add gaps between grid items
+            justify-content: center; // Center the cards horizontally
+            align-content: center; // Center the cards vertically if there's extra space
+        
+            @include screensize($tablet) {
+                grid-template-columns: 1fr; // Single column on tablets
+            }
+        
+            @include screensize($desktop) {
+                grid-template-columns: 1fr 1fr 1fr; // Three columns on desktop
+            }
+        
             .card-v5-content {
-                display: inline-block;
+                display: inline-block; // Prevent stretching and shrink-wrap the content
+                align-self: start; // Prevent vertical stretching in the grid cell
+                justify-self: center; // Center the card horizontally within its grid cell
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
                 position: relative; // Required for the hover effect
                 overflow: hidden;
-
+        
                 &:after {
                     content: "→"; // Unicode arrow symbol
                     position: absolute;
@@ -30,7 +42,7 @@
                     color: white;
                     font-weight: bold;
                 }
-
+        
                 &:before {
                     content: "";
                     position: absolute;
@@ -44,16 +56,24 @@
                     transform: scale(1);
                     transition: transform 0.3s ease-out;
                 }
-
+        
                 &:hover:before {
                     transform: scale(25); // Expanding circle effect
                 }
-
+        
                 .card-v5-info {
                     font-family: $font;
-                    max-width: 380px;
-                    padding: 20px;
+                    max-width: 350px;
+                    padding: 10px;
 
+                    @include screensize($tablet) {
+                        padding: 15px; // Adjust padding for tablet
+                    }
+                    @include screensize($desktop) {
+                        padding: 20px; // Adjust padding for desktop
+                        max-width: 380px;
+                    }
+        
                     h1.card-v5-title {
                         color: var(--blue);
                         font-size: 1.5rem;
@@ -61,7 +81,7 @@
                         font-family: $font;
                         transition: color 0.3s ease-in-out;
                     }
-
+        
                     p.card-v5-description {
                         color: var(--p-color);
                         font-size: 1rem;
@@ -69,7 +89,7 @@
                         font-family: $font;
                         transition: color 0.3s ease-in-out;
                     }
-
+        
                     p.card-v5-industry,
                     p.card-v5-location {
                         display: flex;
@@ -78,12 +98,12 @@
                         color: var(--p-color-light);
                         font-size: 0.9rem;
                         font-family: $font;
-
+        
                         .material-icons-outlined {
                             font-size: 20px;
                             vertical-align: middle;
                         }
-
+        
                         .industry-item,
                         .location-item {
                             background-color: #ffca09; // Yellow background
@@ -95,7 +115,7 @@
                             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
                         }
                     }
-
+        
                     &:hover h1.card-v5-title,
                     &:hover p.card-v5-description,
                     &:hover span.material-icons-outlined {
