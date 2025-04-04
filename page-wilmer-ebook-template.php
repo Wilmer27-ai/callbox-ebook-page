@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/wilmer-ebook.css">
 
 
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -654,14 +655,118 @@
     </section>
 
     <section class="case-study-v1">
-        <div class="case-study-v1-wrappper">
+        <div class="case-study-v1-wrapper">
             <div class="case-study-v1-inner">
-                <div class="case-study-v1-content">
-
+                <div class="case-study-v1-container">
+                    <img class="background-img-v1" src="assets/case-study-v1.svg" alt="case-study background image">
+                    <div class="case-study-v1-content">
+                        <h1 class="case-study-v1-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v1-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v1-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v1-info-group">
+                            <p class="case-study-v1-info">183 Sales Appointments</p>
+                            <p class="case-study-v1-info">150+ Qualified Leads</p>
+                            <p class="case-study-v1-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v1-buttons">
+                            <button class="case-study-v1-button-1">Read full story</button>
+                            <button class="case-study-v1-button-2">More success stories</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="case-study-v2">
+        <div class="case-study-v2-wrapper">
+            <div class="case-study-v2-inner">
+                <div class="case-study-v2-container">
+                    <img class="background-img-v2" src="assets/case-study-v2.svg" alt="case-study background image">
+                    <div class="case-study-v2-content">
+                        <h1 class="case-study-v2-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v2-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v2-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v2-info-group">
+                            <p class="case-study-v2-info">183 Sales Appointments</p>
+                            <p class="case-study-v2-info">150+ Qualified Leads</p>
+                            <p class="case-study-v2-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v2-buttons">
+                            <button class="case-study-v2-button-1">Read full story</button>
+                            <button class="case-study-v2-button-2">More success stories</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-v3">
+        <div class="case-study-v3-wrapper">
+            <div class="case-study-v3-inner">
+                <div class="case-study-v3-container">
+                    <div class="case-study-v3-image">
+                        <img class="background-img-v3" src="assets/case-study-v3.svg" alt="case-study background image">
+                    </div>
+                    <div class="case-study-v3-content">
+                        <h1 class="case-study-v3-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v3-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v3-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v3-info-group">
+                            <p class="case-study-v3-info">183 Sales Appointments</p>
+                            <p class="case-study-v3-info">150+ Qualified Leads</p>
+                            <p class="case-study-v3-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v3-buttons">
+                            <button class="case-study-v3-button-1">Read full story</button>
+                            <button class="case-study-v3-button-2">More success stories</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-v4">
+        <div class="case-study-v4-wrapper">
+            <div class="case-study-v4-inner">
+                <div class="case-study-v4-container">
+                <div class="case-study-v4-image">
+                            <img class="background-img-v4" src="assets/case-study-v4.svg"
+                                alt="case-study background image">
+                        </div>
+                    <div class="case-study-v4-content">
+                        <h1 class="case-study-v4-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v4-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v4-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v4-info-group">
+                            <p class="case-study-v4-info">183 Sales Appointments</p>
+                            <p class="case-study-v4-info">150+ Qualified Leads</p>
+                            <p class="case-study-v4-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v4-buttons">
+                            <button class="case-study-v4-button-1">Read full story</button>
+                            <button class="case-study-v4-button-2">More success stories</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,127 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study-v4 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.case-study-v4 .case-study-v4-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-image .background-img-v4 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 600px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  margin: 80px 0px 80px 60px;
+  padding: 30px;
+  border-radius: 0.75rem;
+  background: linear-gradient(to bottom right, rgba(2, 26, 48, 0.9), rgba(6, 48, 96, 0.9));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-top-span {
+  font-size: 0.85rem;
+  color: #ffca09;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  display: block;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-p {
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-info-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-info-group .case-study-v4-info {
+  font-size: 1.25rem;
+  color: #ffca09;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-buttons .case-study-v4-button-1,
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-buttons .case-study-v4-button-2 {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  font-family: "Work Sans", work-sans, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffca09;
+  color: #021a30;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-buttons .case-study-v4-button-1:hover,
+.case-study-v4 .case-study-v4-wrapper .case-study-v4-inner .case-study-v4-container .case-study-v4-content .case-study-v4-buttons .case-study-v4-button-2:hover {
+  background-color: #ffd54f;
+  color: #021a30;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
