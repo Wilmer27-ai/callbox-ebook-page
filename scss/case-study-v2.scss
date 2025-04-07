@@ -18,6 +18,7 @@
                 border-radius: 1rem;
                 display: flex;
                 overflow: hidden;
+                margin: 10px;
 
                 &::before {
                     content: "";
@@ -46,13 +47,18 @@
                     z-index: 2;
                     font-family: $font;
                     margin: auto;
-                    padding: 40px;
+                    padding: 20px;
+
                     border-radius: 1rem;
                     text-align: center;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+
+                    @include screensize($desktop) {
+                        padding: 40px;
+                    }
 
                     .case-study-v2-top-span {
                         max-width: 700px;
@@ -68,13 +74,17 @@
 
                     .case-study-v2-title {
                         max-width: 700px;
-                        font-size: 2.5rem;
+                        font-size: 1.5rem;
                         color: white;
                         font-weight: 700;
                         margin: 10px 0 10px 0;
                         
-                        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+                        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
                         text-align: center;
+
+                        @include screensize($desktop) {
+                            font-size: 2.5rem;
+                        }
                     }
 
                     .case-study-v2-p {
@@ -94,11 +104,15 @@
                         margin-bottom: 20px;
 
                         .case-study-v2-info {
-                            font-size: 1.5rem;
+                            font-size: 1rem;
                             color: #ffca09;
                             font-weight: 500;
                             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
                             text-align: center;
+
+                            @include screensize($desktop) {
+                                font-size: 1.5rem;
+                            }
                         }
                     }
 

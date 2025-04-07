@@ -1,0 +1,156 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+
+.case-study-v5 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  .case-study-v5-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    .case-study-v5-inner {
+      .case-study-v5-container {
+        background: linear-gradient(to top left, #063060, #0a1e30);
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 20px;
+        border-radius: 1rem;
+        margin: 10px;
+
+        .image-grid {
+          display: grid;
+          grid-template-areas:
+            "box1 box2"
+            "box3 box3";
+          grid-template-columns: repeat(2, 1fr); 
+          grid-template-rows: auto auto; 
+          gap: 10px;
+          padding-left: 10px; // Space between the image grid and text
+          display: none;
+
+          @include screensize($desktop) {
+            display: block; // Show the grid on desktop
+            display: grid;
+          }
+
+          .box {
+            position: relative; 
+            height: 250px; 
+            width: 100%;
+            overflow: hidden; 
+            border-radius: 0.8rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; 
+            }
+
+            .case-study-v5-info {
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+              background-color: rgba(6, 48, 96, 0.8);
+              color: #ffca09;
+              font-family: $font;
+              padding: 3px 10px;
+              border-radius: 0.8rem;
+              font-size: 0.9rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+              white-space: nowrap; 
+              overflow: hidden; 
+              text-overflow: ellipsis; 
+            }
+          }
+
+          .box:nth-child(1) {
+            grid-area: box1; // Top-left image
+          }
+
+          .box:nth-child(2) {
+            grid-area: box2; // Top-right image
+          }
+
+          .box:nth-child(3) {
+            grid-area: box3; // Bottom image spans two columns
+          }
+        }
+        .case-study-v5-content {
+          max-width: 600px;
+          font-family: $font;
+          padding: 30px;
+          border-radius: 0.75rem;
+          display: flex;
+          flex-direction: column;
+
+
+          @include screensize($desktop) {
+            padding: 30px 30px 30px 60px; // Adjust padding for desktop
+          }
+
+          .case-study-v5-top-span {
+            font-size: 0.85rem;
+            color: #ffca09; // Highlight color
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 15px;
+            display: block;
+          }
+
+          .case-study-v5-title {
+            font-size: 2.5rem;
+            color: #ffffff; // White for contrast
+            font-weight: 800;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); // Stronger shadow for emphasis
+          }
+
+          .case-study-v5-p {
+            font-size: 1.1rem;
+            color: #d1d1d1; // Light gray for readability
+            font-weight: 400;
+            margin: 0 0 20px 0;
+            line-height: 1.8;
+          }
+
+          
+
+          .case-study-v5-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+
+            .case-study-v5-button-1,
+            .case-study-v5-button-2 {
+              padding: 0.75rem 1.5rem;
+              font-size: 0.9rem;
+              line-height: 1.25rem;
+              font-family: "Work Sans", work-sans, sans-serif;
+              font-weight: 600;
+              text-align: center;
+              text-decoration: none;
+              background-color: #ffca09; // Highlight color
+              color: #021a30; // Dark blue for contrast
+              border-radius: 0.5rem;
+              border: none;
+              cursor: pointer;
+              transition: all 300ms ease;
+
+              &:hover {
+                background-color: #ffd54f; // Slightly lighter yellow on hover
+                color: #021a30;
+                transform: translateY(-2px); // Subtle hover effect
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

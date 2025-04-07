@@ -40,6 +40,7 @@
   border-radius: 1rem;
   display: flex;
   overflow: hidden;
+  margin: 10px;
 }
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container::before {
   content: "";
@@ -66,28 +67,32 @@
   z-index: 2;
   max-width: 600px;
   font-family: "Montserrat", "Inter", sans-serif;
-  margin: 70px 0 70px 40px;
+  margin: 70px 0 70px 10px;
   padding: 20px;
   border-radius: 0.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content {
+    margin: 70px 0 70px 40px;
+  }
+}
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-top-span {
   font-size: 0.75rem;
-  color: #ffca09;
+  color: white;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-title {
   font-size: 2rem;
-  color: white;
+  color: #ffca09;
   font-weight: 700;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 12px 0 25px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-p {
   font-size: 1rem;
-  color: #d1d1d1;
+  color: white;
   font-weight: 400;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -100,14 +105,33 @@
   color: #ffca09;
   font-weight: 500;
   margin: 10px 0 0 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons {
   margin: 20px 0 0 0;
   display: flex;
   gap: 15px;
 }
-.case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-1,
+.case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-1 {
+  display: inline-block;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Work Sans", work-sans, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-radius: 0.5rem;
+  border: 2px solid var(--yellow);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-1:hover {
+  background-color: transparent;
+  color: var(--yellow);
+}
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-2 {
   display: inline-block;
   width: auto;
@@ -125,7 +149,6 @@
   cursor: pointer;
   transition: all 300ms ease;
 }
-.case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-1:hover,
 .case-study-v1 .case-study-v1-wrapper .case-study-v1-inner .case-study-v1-container .case-study-v1-content .case-study-v1-buttons .case-study-v1-button-2:hover {
   background-color: var(--yellow);
   color: var(--blue);

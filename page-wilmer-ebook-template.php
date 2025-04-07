@@ -738,10 +738,6 @@
         <div class="case-study-v4-wrapper">
             <div class="case-study-v4-inner">
                 <div class="case-study-v4-container">
-                <div class="case-study-v4-image">
-                            <img class="background-img-v4" src="assets/case-study-v4.svg"
-                                alt="case-study background image">
-                        </div>
                     <div class="case-study-v4-content">
                         <h1 class="case-study-v4-top-span">Callbox Lead Generation Success Stories</h1>
                         <h2 class="case-study-v4-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
@@ -763,10 +759,46 @@
         </div>
     </section>
 
-
-
-
-
+    <section class="case-study-v5">
+        <div class="case-study-v5-wrapper">
+            <div class="case-study-v5-inner">
+                <div class="case-study-v5-container">
+                        <div class="image-grid">
+                            <div class="box">
+                                <img src="assets/qualified-leads-v5.svg" alt="Image 1">
+                                <div class="case-study-v5-info">
+                                    <p>183 Sales Appointments</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="assets/sales-appointment-v5.svg" alt="Image 2">
+                                <div class="case-study-v5-info">
+                                    <p>150+ Qualified Leads</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="assets/roi-increase.svg" alt="Image 3">
+                                <div class="case-study-v5-info">
+                                    <p>200% ROI Increase</p>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    <div class="case-study-v5-content">
+                        <h1 class="case-study-v5-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v5-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v5-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v5-buttons">
+                            <button class="case-study-v5-button-1">Read full story</button>
+                            <button class="case-study-v5-button-2">More success stories</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

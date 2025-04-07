@@ -11,15 +11,23 @@
     .case-study-v3-inner {
       .case-study-v3-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+        grid-template-columns: 1fr;
         background: #24272b;
         border-radius: 1rem;
         overflow: hidden; // Add this to enforce the border radius on child elements
-
+ 
+        @include screensize($desktop) {
+          grid-template-columns: 1fr 1fr;
+        }
         .case-study-v3-image {
             position: relative;
             width: 100%;
             height: 100%;
+            display: none;
+            @include screensize($desktop) {
+              display: block;
+            }
           
 
           .background-img-v3 {
@@ -36,12 +44,14 @@
           z-index: 2;
           max-width: 600px;
           font-family: $font;
-          margin: 80px 20px 80px 0px;
+          margin: 80px 20px 80px 20px;
           padding: 20px;
           border-radius: 0.5rem;
-
           display: flex;
           flex-direction: column;
+          @include screensize($desktop) {
+            margin: 80px 20px 80px 0px;
+          }
 
           .case-study-v3-top-span {
             font-size: 0.75rem;
@@ -59,7 +69,7 @@
             font-weight: 700;
             margin-bottom: 15px;
             margin-top: 5px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
           }
 
           .case-study-v3-p {
