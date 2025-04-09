@@ -801,4 +801,20 @@
     </section>
 </body>
 
+<section class="case-study-v6">
+    <div class="case-study-v6-wrapper">
+        <div class="case-study-v6-inner">
+            <div class="case-study-v6-container">
+                <!-- Use <embed> for better flexibility with animations -->
+                <embed src="assets/svgator1.svg" type="image/svg+xml" class="case-study-v6-svg">
+                <div class="case-study-v6-content">
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </html>

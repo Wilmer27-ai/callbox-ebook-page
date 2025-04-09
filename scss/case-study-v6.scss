@@ -1,0 +1,35 @@
+@use "../template-structures/styles" as *; // ✅ Use namespace
+@use "../template-structures/colors" as *;
+@use "../template-structures/layout" as *;
+.case-study-v6 {
+    margin: 200px 0;
+
+    .case-study-v6-wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        .case-study-v6-inner {
+            .case-study-v6-container {
+                min-height: 100px;
+                background-color: #f2f2f2;
+                border-radius: 1rem;
+                overflow: hidden; // Ensures the SVG respects the border radius
+                position: relative; // Allows positioning of the SVG as a cover
+                box-sizing: border-box;
+
+                .case-study-v6-svg {
+
+                    width: 100%;
+                    height: 100%;
+
+                }
+
+                .case-study-v6-content {
+                    z-index: 1;
+                    color: #333; // Adjust text color for readability
+                }
+            }
+        }
+    }
+}

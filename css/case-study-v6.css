@@ -1,0 +1,50 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study-v6 {
+  margin: 200px 0;
+}
+.case-study-v6 .case-study-v6-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container {
+  min-height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-svg {
+  width: 100%;
+  height: 100%;
+}
+.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content {
+  z-index: 1;
+  color: #333;
+}
