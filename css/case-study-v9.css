@@ -24,15 +24,15 @@
   padding: 0;
 }
 
-.case-study-v6 {
+.case-study-v9 {
   margin: 200px 0;
 }
-.case-study-v6 .case-study-v6-wrapper {
+.case-study-v9 .case-study-v9-wrapper {
   max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container {
   background-color: #f2f2f2;
   border-radius: 1rem;
   overflow: hidden;
@@ -41,7 +41,7 @@
   height: auto;
   margin: 0 30px 0 30px;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-svg {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-svg {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -50,7 +50,7 @@
   object-fit: cover;
   pointer-events: none;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content {
   position: relative;
   z-index: 2;
   max-width: 650px;
@@ -62,11 +62,11 @@
   color: white;
 }
 @media screen and (min-width: 1024px) {
-  .case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content {
+  .case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content {
     margin: 0;
   }
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-top-span {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-top-span {
   font-size: 0.75rem;
   color: #063060;
   font-weight: 600;
@@ -75,7 +75,7 @@
   margin-bottom: 10px;
   display: block;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-title {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-title {
   font-size: 2.25rem;
   line-height: 2.5rem;
   color: #063060;
@@ -83,30 +83,31 @@
   margin-bottom: 8px;
   margin-top: 5px;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-p {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-p {
   font-size: 1rem;
   color: #333;
   font-weight: 400;
   margin-bottom: 15px;
   line-height: 1.5rem;
+  max-width: 550px;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-info-group {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-info-group {
   gap: 25px;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-info-group .case-study-v6-info {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-info-group .case-study-v9-info {
   font-size: 1.25rem;
   color: #063060;
   font-weight: 500;
   margin: 10px 0 0 0;
   line-height: 1.5rem;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-buttons {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-buttons {
   margin: 20px 0 0 0;
   display: flex;
   gap: 15px;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-buttons .case-study-v6-button-1,
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-buttons .case-study-v6-button-2 {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-buttons .case-study-v9-button-1,
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-buttons .case-study-v9-button-2 {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -121,8 +122,8 @@
   transition: transform 0.25s ease-in-out, background-color 300ms ease;
   cursor: pointer;
 }
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-buttons .case-study-v6-button-1:hover,
-.case-study-v6 .case-study-v6-wrapper .case-study-v6-inner .case-study-v6-container .case-study-v6-content .case-study-v6-buttons .case-study-v6-button-2:hover {
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-buttons .case-study-v9-button-1:hover,
+.case-study-v9 .case-study-v9-wrapper .case-study-v9-inner .case-study-v9-container .case-study-v9-content .case-study-v9-buttons .case-study-v9-button-2:hover {
   background-color: #ffd54f;
   transform: translateY(-5px);
 }

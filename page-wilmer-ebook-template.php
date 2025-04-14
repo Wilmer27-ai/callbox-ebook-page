@@ -805,16 +805,106 @@
     <div class="case-study-v6-wrapper">
         <div class="case-study-v6-inner">
             <div class="case-study-v6-container">
-                <!-- Use <embed> for better flexibility with animations -->
                 <embed src="assets/svgator1.svg" type="image/svg+xml" class="case-study-v6-svg">
                 <div class="case-study-v6-content">
-
-                    
-                </div>
+                <h1 class="case-study-v6-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v6-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v6-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v6-info-group">
+                            <p class="case-study-v6-info">183 Sales Appointments</p>
+                            <p class="case-study-v6-info">150+ Qualified Leads</p>
+                            <p class="case-study-v6-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v6-buttons">
+                            <button class="case-study-v6-button-1">Read full story</button>
+                            <button class="case-study-v6-button-2">More success stories</button>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="case-study-v7">
+    <div class="case-study-v7-wrapper">
+        <div class="case-study-v7-inner">
+            <div class="case-study-v7-container">
+                <embed src="assets/svgator3.svg" type="image/svg+xml" class="case-study-v7-svg">
+                <div class="case-study-v7-content">
+                <h1 class="case-study-v7-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v7-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v7-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v7-info-group">
+                            <p class="case-study-v7-info">183 Sales Appointments</p>
+                            <p class="case-study-v7-info">150+ Qualified Leads</p>
+                            <p class="case-study-v7-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v7-buttons">
+                            <button class="case-study-v7-button-1">Read full story</button>
+                            <button class="case-study-v7-button-2">More success stories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-study-v8">
+    <div class="case-study-v8-wrapper">
+        <div class="case-study-v8-inner">
+            <div class="case-study-v8-container">
+                <embed src="assets/svgator2.svg" type="image/svg+xml" class="case-study-v8-svg">
+                <div class="case-study-v8-content">
+                <h1 class="case-study-v8-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v8-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v8-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v8-info-group">
+                            <p class="case-study-v8-info">183 Sales Appointments</p>
+                            <p class="case-study-v8-info">150+ Qualified Leads</p>
+                            <p class="case-study-v8-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v8-buttons">
+                            <button class="case-study-v8-button-1">Read full story</button>
+                            <button class="case-study-v8-button-2">More success stories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-study-v9">
+    <div class="case-study-v9-wrapper">
+        <div class="case-study-v9-inner">
+            <div class="case-study-v9-container">
+                <embed src="assets/svgator4.svg" type="image/svg+xml" class="case-study-v9-svg">
+                <div class="case-study-v9-content">
+                <h1 class="case-study-v9-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v9-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v9-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v9-info-group">
+                            <p class="case-study-v9-info">183 Sales Appointments</p>
+                            <p class="case-study-v9-info">150+ Qualified Leads</p>
+                            <p class="case-study-v9-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v9-buttons">
+                            <button class="case-study-v9-button-1">Read full story</button>
+                            <button class="case-study-v9-button-2">More success stories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
 
 </html>

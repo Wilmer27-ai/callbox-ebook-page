@@ -1,25 +1,25 @@
 @use "../template-structures/styles" as *; // ✅ Use namespace
 @use "../template-structures/colors" as *;
 @use "../template-structures/layout" as *;
-.case-study-v6 {
+.case-study-v8 {
     margin: 200px 0;
 
-    .case-study-v6-wrapper {
+    .case-study-v8-wrapper {
         max-width: 1280px;
         margin: 0 auto;
         box-sizing: border-box;
 
-        .case-study-v6-inner {
-            .case-study-v6-container {
+        .case-study-v8-inner {
+            .case-study-v8-container {
                 background-color: #f2f2f2;
                 border-radius: 1rem;
                 overflow: hidden; // Ensures the SVG respects the border radius
                 position: relative; // Allows positioning of the content and SVG
                 box-sizing: border-box;
                 height: auto; // Automatically adjusts height based on content
-                margin: 0 30px 0 30px; // Adjusted margin for better spacing
+                margin: 0 30px 0 30px;
 
-                .case-study-v6-svg {
+                .case-study-v8-svg {
                     position: absolute;
                     bottom: 0; // Stick the SVG to the bottom of the container
                     left: 0;
@@ -29,7 +29,7 @@
                     pointer-events: none; // Prevents interaction with the SVG
                 }
 
-                .case-study-v6-content {
+                .case-study-v8-content {
                     position: relative; // Ensure content is positioned relative to the container
                     z-index: 2; // Ensure content is above the SVG
                     max-width: 650px;
@@ -47,7 +47,7 @@
                         margin: 0;
                 }
       
-                .case-study-v6-top-span {
+                .case-study-v8-top-span {
                   font-size: 0.75rem;
                   color: #063060;
                   font-weight: 600;
@@ -57,7 +57,7 @@
                   display: block;
                 }
       
-                .case-study-v6-title {
+                .case-study-v8-title {
                   font-size: 2.25rem;
                   line-height: 2.5rem;
                   color: #063060;
@@ -67,7 +67,7 @@
         
                 }
       
-                .case-study-v6-p {
+                .case-study-v8-p {
                   font-size: 1rem;
                   color: #333; // Muted black
                   font-weight: 400;
@@ -75,10 +75,10 @@
                   line-height: 1.5rem;
                 }
       
-                .case-study-v6-info-group {
+                .case-study-v8-info-group {
                   gap: 25px;
       
-                  .case-study-v6-info {
+                  .case-study-v8-info {
                     font-size: 1.25rem;
                     color: #063060;
                     font-weight: 500;
@@ -88,13 +88,13 @@
                   }
                 }
       
-                .case-study-v6-buttons {
+                .case-study-v8-buttons {
                   margin: 20px 0 0 0;
                   display: flex;
                   gap: 15px;
       
-                  .case-study-v6-button-1,
-                  .case-study-v6-button-2 {
+                  .case-study-v8-button-1,
+                  .case-study-v8-button-2 {
                     padding: 0.75rem 1.5rem;
                     font-size: 1rem;
                     line-height: 1.25rem;
