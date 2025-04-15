@@ -1,0 +1,129 @@
+:root {
+  --blue: #063060;
+  --grey: rgba(255, 255, 255, 0.3);
+  --yellow: #ffca09;
+  --white: #ffffff;
+  --gradient-text: linear-gradient(45deg, #007cba, #218fa6, #9568c3, #4a54ad);
+  --shadow: 0px 8px 9px -6px rgba(95, 115, 128, 0.44);
+  --p-color: rgba(49, 59, 66, 0.95);
+  --p-color-light: #5f7380;
+  --t-color: #404040;
+  --black: #000000;
+  --border: 1px solid #ccc;
+  --red: #ff0000;
+  --disable: #ccc;
+  --b-shadow: 0 2px 5px rgba(102, 102, 102, 0.3);
+  --b2-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+:root html,
+:root body,
+:root ul,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study-v10 {
+  margin: 200px 0;
+}
+.case-study-v10 .case-study-v10-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 30px 0 30px;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  padding: 70px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content {
+    margin: 0;
+  }
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-top-span {
+  font-size: 0.75rem;
+  color: #063060;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 10px;
+  display: block;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #063060;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.5rem;
+  max-width: 550px;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-info-group {
+  gap: 25px;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-info-group .case-study-v10-info {
+  font-size: 1.25rem;
+  color: #063060;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+  line-height: 1.5rem;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-buttons {
+  margin: 20px 0 0 0;
+  display: flex;
+  gap: 15px;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-buttons .case-study-v10-button-1,
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-buttons .case-study-v10-button-2 {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "Work Sans", work-sans, sans-serif;
+  font-weight: 600;
+  color: #063060;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffca09;
+  border-radius: 0.5rem;
+  border: none;
+  transition: transform 0.25s ease-in-out, background-color 300ms ease;
+  cursor: pointer;
+}
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-buttons .case-study-v10-button-1:hover,
+.case-study-v10 .case-study-v10-wrapper .case-study-v10-inner .case-study-v10-container .case-study-v10-content .case-study-v10-buttons .case-study-v10-button-2:hover {
+  background-color: #ffd54f;
+  transform: translateY(-5px);
+}

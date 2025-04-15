@@ -904,6 +904,58 @@
         </div>
     </div>
 </section>
+
+<section class="case-study-v10">
+    <div class="case-study-v10-wrapper">
+        <div class="case-study-v10-inner">
+            <div class="case-study-v10-container">
+                <embed src="assets/svgator5.svg" type="image/svg+xml" class="case-study-v10-svg">
+                <div class="case-study-v10-content">
+                <h1 class="case-study-v10-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v10-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v10-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v10-info-group">
+                            <p class="case-study-v10-info">183 Sales Appointments</p>
+                            <p class="case-study-v10-info">150+ Qualified Leads</p>
+                            <p class="case-study-v10-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v10-buttons">
+                            <button class="case-study-v10-button-1">Read full story</button>
+                            <button class="case-study-v10-button-2">More success stories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-study-v11">
+    <div class="case-study-v11-wrapper">
+        <div class="case-study-v11-inner">
+            <div class="case-study-v11-container">
+                <embed src="assets/svgator6.svg" type="image/svg+xml" class="case-study-v11-svg">
+                <div class="case-study-v11-content">
+                <h1 class="case-study-v11-top-span">Callbox Lead Generation Success Stories</h1>
+                        <h2 class="case-study-v11-title">Callbox Helps IT Leader Attain 150+ Appointments Across the US
+                        </h2>
+                        <p class="case-study-v11-p">See how Callbox’s tailored ABM program empowered an IT leader to
+                            expand its reach, connect with qualified prospects, and grow its client base.</p>
+                        <div class="case-study-v11-info-group">
+                            <p class="case-study-v11-info">183 Sales Appointments</p>
+                            <p class="case-study-v11-info">150+ Qualified Leads</p>
+                            <p class="case-study-v11-info">200% ROI Increase</p>
+                        </div>
+                        <div class="case-study-v11-buttons">
+                            <button class="case-study-v11-button-1">Read full story</button>
+                            <button class="case-study-v11-button-2">More success stories</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
     
 </body>
 
