@@ -2676,3 +2676,408 @@
   background-color: #ffd54f;
   transform: translateY(-5px);
 }
+
+/* Reviews Section Styles 1905 */
+.reviews-section {
+  padding: 0 20px;
+  margin: 0 20px 20px 20px;
+}
+.reviews-section .reviews-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.reviews-section .reviews-wrapper .reviews-inner {
+  display: flex;
+  justify-content: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+@media screen and (min-width: 712px) {
+  .reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #063060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-container .play-button span.material-icons-outlined {
+  font-size: 50px;
+  color: #333;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-container .play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-container:hover .play-button {
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title .icon .material-icons-outlined.profile-icon {
+  font-size: 95px;
+  color: #666;
+  content: "account_circle";
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title .title {
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title .title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .logo-title .title p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .stars-review {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .stars-review .material-icons-outlined {
+  font-size: 20px;
+  color: #f4c150;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .review-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 15px;
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .review-text p {
+  margin: 0 0 10px;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .reviews-video-card .video-details .company-logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #063060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2 span.material-icons-outlined {
+  font-size: 50px;
+  color: #333;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2:hover .play-button {
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 {
+  padding: 20px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #222;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 10px;
+  line-height: 1.6;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .material-icons-outlined.profile-icon {
+  font-size: 50px;
+  color: #444;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .name-position h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  color: #222;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .name-position p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review .material-icons-outlined {
+  font-size: 22px;
+  color: #f4c150;
+  transition: transform 0.2s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review .material-icons-outlined:hover {
+  transform: scale(1.2);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2::before {
+  content: "“";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 150px;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .stars-review {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  margin: 20px 0;
+  z-index: 1;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .stars-review .material-icons-outlined {
+  font-size: 22px;
+  color: #f4c150;
+  transition: transform 0.2s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .stars-review .material-icons-outlined:hover {
+  transform: scale(1.2);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+  margin-top: 15px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  z-index: 1;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  margin: 20px 0 20px;
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person .material-icons-outlined.profile-icon {
+  font-size: 50px;
+  color: #444;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person .name-position h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  color: #222;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person .name-position p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person .name-position .company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-2 .icon-person .name-position .company-logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #063060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2 span.material-icons-outlined {
+  font-size: 50px;
+  color: #333;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2 .play-button2:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-container2:hover .play-button {
+  background-color: rgb(255, 255, 255);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 {
+  padding: 20px;
+  font-family: "Montserrat", "Inter", sans-serif;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #222;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 10px;
+  line-height: 1.6;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .material-icons-outlined.profile-icon {
+  font-size: 50px;
+  color: #444;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .name-position h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  color: #222;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .icon-person .name-position p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review .material-icons-outlined {
+  font-size: 22px;
+  color: #f4c150;
+  transition: transform 0.2s ease;
+}
+.reviews-section .reviews-wrapper .reviews-inner .reviews-content .testimonials-videos .testimonial-1 .video-details2 .stars-review .material-icons-outlined:hover {
+  transform: scale(1.2);
+}
